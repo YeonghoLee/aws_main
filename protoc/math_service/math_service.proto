@@ -1,8 +1,6 @@
 syntax = "proto3";
-
-package math;
-
-option go_package = "proto;math";  // go_package 옵션 추가
+package math_service;
+option go_package = ".;math_service";
 
 service MathService {
   rpc Add (AddRequest) returns (AddResponse);
